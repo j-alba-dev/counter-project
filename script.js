@@ -1,8 +1,8 @@
 
   
 //   TODO define a counter variable that is mutable
+let counter = 0
 
-  
 let counterElement = document.getElementById("counter");
 
 function updateCounter() {
@@ -11,13 +11,16 @@ function updateCounter() {
 
 function handleIncrement() {
   // TODO update count by adding 1
+  counter += 1
   
   updateCounter();
 }
 
 function handleDecrement() {
   // TODO update count by subtracting 1
-  
+  if (counter > 0) {
+  counter -= 1
+  }
   updateCounter();
 }
 
